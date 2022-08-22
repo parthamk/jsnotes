@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS-JS_Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <h3>Ns-Js Notes</h3>
+        </nav>
+        <div class="content-wrap">
+            <section class="left-section">
+                <h3>JavaScript Notes</h3>
+                <div id="myUL">
+                    <span class="caret">Basics of JavaScript</span>
+                      <div class="nested">
+                        <div class="caret"><a herf="#">Subject</a></div>
+                        <div class="caret"><a herf="#">Subject</a></div> 
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="myUL">
+                    <span class="caret">Upcoming</span>
+                      <div class="nested">
+                        <div class="caret"><a herf="#">Demo</a></div>
+                        <div class="caret"><a herf="#">Demo</a></div> 
+                      </ul>
+                    </div>
+                  </div>
+            </section>
+            <section class="right-section">
+                <h3>JavaScript</h3>
+                <p></p>
+            </section>
+        </div>
+    </main>
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+        });
+    }
+</script>
+</body>
+</html>
