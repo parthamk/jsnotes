@@ -15,26 +15,97 @@
         <div class="content-wrap">
             <section class="left-section">
                 <h3>JavaScript Notes</h3>
-                <div id="myUL">
+                <div id="topics-ns">
+                    <!-- Parent Title -->
                     <span class="caret">Basics of JavaScript</span>
-                      <div class="nested">
-                        <div class="caret"><a herf="#">Subject</a></div>
-                        <div class="caret"><a herf="#">Subject</a></div> 
-                      </ul>
+                    <!-- nested subjects -->
+                    <div class="nested">
+                      <!-- 1st child of parent -->
+                      <div class="caret"><a href="#intro">JS introduction</a></div>
+                      <div id="topics-ns">
+                        <span class="caret"><a href="#execution">Execution Context and Call Stack</a></span>
+                        <!-- another child subject -->
+                        <div class="nested">
+                          <div class="caret"><a href="#javaScript-in-browsers">JavaScript in Browsers</a></div>
+                          <div class="caret"><a href="#setting-up">Setting up the development environment</a></div> 
+                        </div>
+                      </div>
+                      <!-- start of 2nd parent subject -->
+                      <div class="caret"><a href="#js-basics">JS Basics</a></div>
+                      <div id="topics-ns">
+                        <span class="caret"><a href="#">Demo Title</a></span>
+                        <div class="nested">
+                          <div class="caret"><a href="#">Subject-1</a></div>
+                          <div class="caret"><a href="#">Subject-2</a></div> 
+                        </div>
+                      </div>
                     </div>
+                </div>
+                <div id="topics-ns">
+                  <span class="caret">Upcoming</span>
+                    <div class="nested">
+                      <div class="caret"><a href="#">Demo</a></div>
+                      <div class="caret"><a href="#">Demo</a></div> 
                   </div>
-                  <div id="myUL">
-                    <span class="caret">Upcoming</span>
-                      <div class="nested">
-                        <div class="caret"><a herf="#">Demo</a></div>
-                        <div class="caret"><a herf="#">Demo</a></div> 
-                      </ul>
-                    </div>
-                  </div>
+                </div>
             </section>
             <section class="right-section">
-                <h3>JavaScript</h3>
-                <p></p>
+                <h2>JavaScript</h2>
+                <p>JavaScript is an interpreted, lightweight programming language. It's a webpage scripting language. It is intended for the development of network-centric applications. Node.js, Adobe Acrobat, ApacheCouchDB etc also uses javascript. It's open and cross-platform. JavaScript is a single-threaded, prototype-based, dynamic language that supports object-oriented, imperative, and declarative (e.g. functional programming) programming styles.</p>
+                
+                <div id="intro">
+                  <h3>JS introduction</h3>
+                  <h3>Introduction to JAVASCRIPT</h3>
+                  <p>JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers. With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity.
+
+                    Javascript is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain.</p>
+                    <br>
+                  <img src="https://1qkeyv41u1op36vgbm47q0i6-wpengine.netdna-ssl.com/wp-content/uploads/2021/09/Features-of-JavaScript.png" alt="features of JS" width="70%">
+                </div>
+                <div id="execution">
+                  <h3>Execution Context and Call Stack</h3>
+                  <h3>JavaScript in Browsers</h3>
+                  <p>All the modern browsers come with built-in support for JavaScript. Frequently, you may need to enable or disable this support manually. This chapter explains the procedure of enabling and disabling JavaScript support in your browsers: Internet Explorer, Firefox, chrome, and Opera.</p>
+                  
+                  <p>JavaScript is activated by default in most of browsers, if not you can follow these steps to activate.</p>
+                  <ul>
+                    <h4>JavaScript in Chrome</h4>
+                    
+                    <li>Click the Chrome menu at the top right hand corner of your browser.</li>
+                    <li>Select Settings.</li>
+                    <li>Click Show advanced settings at the end of the page.</li>
+                    <li>Under the Privacy section, click the Content settings button.</li>
+                    <li>In the "Javascript" section, select "Do not allow any site to run JavaScript" or "Allow all sites to run JavaScript (recommended)".</li>
+                  </ul>
+                  <ul>
+                    <h4>JavaScript in Firefox</h4>
+                    
+                    <li>Open a new tab → type about: config in the address bar.</li>
+                    <li>Then you will find the warning dialog. Select I’ll be careful, I promise!</li>
+                    <li>Then you will find the list of configure options in the browser.</li>
+                    <li>In the search bar, type javascript.enabled.</li>
+                    <li>There you will find the option to enable or disable javascript by right-clicking on the value of that option → select toggle.</li>
+                  </ul>
+                </div>
+                <div id="setting-up">
+                  <h3>Setting up the development environment</h3>
+                  <br>
+                  <img src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png" alt="JS" width="50%">
+                  <p>Because of its wide range of applications, you can run JavaScript in several ways:</p>
+                  <ul>
+                    <li>Using console tab of web browsers</li>
+                    <li>Using Node.js</li>
+                    <li>By creating web pages</li>
+                  </ul>
+                  <p>Here, we are going to use JavaScript in developing a web application. So, we must have at least two things, a browser, and an editor to write the JavaScript code.</p>
+                  <br>
+                  <p>Although we also need a webserver to run a web application, but we will use a single HTML web page to run our JavaScript code. So, no need to install it for now. We will be using browser to execute JavaScript.</p>
+                  <ul>
+                    <li>Browser :<br>The web browser was the original JavaScript runtime environment, and it's still the most dominant. JavaScript running in the browser is far more ubiquitous than JavaScript running anywhere else. Almost every browser has a JavaScript engine built into it.</li>
+                    <br>
+                    <li>VS Code : <br> Visual Studio Code, also commonly referred to as VS Code, is a source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git</li>
+                  </ul>
+                </div>
             </section>
         </div>
     </main>

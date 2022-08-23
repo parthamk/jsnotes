@@ -26,12 +26,13 @@ nav{
 
 .left-section{
     padding-left: 15px;
-    background-color: #888888;
+    background-color: navy;
     flex-direction: column;
     /* border: 1px solid red; */
     /* height: 100vh; */
     width: 25%;
-    overflow: scroll;
+    /* overflow: scroll; */
+    color: white;
 }
 
 .right-section{
@@ -43,26 +44,44 @@ nav{
     overflow: scroll;
 }
 
-div, #myUL {
+div, #topics-ns {
     list-style-type: none;
-  }
+}
   
-#myUL{
-    margin: 0;
-    padding: 0;
-  }
+#topics-ns{
+  margin-top: 5px;
+  margin-bottom: 5px;
+    /* margin: 0;
+    padding: 0; */
+}
   
-  .caret {
+.caret {
     cursor: pointer;
     -webkit-user-select: none; /* Safari 3.1+ */
     -moz-user-select: none; /* Firefox 2+ */
     -ms-user-select: none; /* IE 10+ */
     user-select: none;
+    padding: 5px;
+}
+
+.nested > .caret:hover{
+  background-color: rgb(0, 0, 70);
+  color: white;
+  width: 90%;
+}
+
+.nested a{
+  text-decoration: none;
+  color: white;
+}
+
+  .caret:hover{
+    border-bottom: 2px solid white;
   }
   
   .caret::before {
     content: "\25B6";
-    color: black;
+    color: white;
     display: inline-block;
     margin-right: 6px;
   }
