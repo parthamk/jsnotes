@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS-JS_Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <h3>Ns-Js Notes</h3>
+        </nav>
+        <div class="content-wrap">
+            <section class="left-section">
+                <h3>Live Class Notes</h3>
+                <div id="topics-ns">
+                  <span class="caret">22/08/2022</span>
+                  <div class="nested">
+                    <div class="caret"><a href="#">JS Basics</a></div>
+                  </div>
+
+                </div>
+            </section>
+            <section class="right-section">
+                <h2>JavaScript</h2>
+                <p>JavaScript is an interpreted, lightweight programming language. It's a webpage scripting language. It is intended for the development of network-centric applications. Node.js, Adobe Acrobat, ApacheCouchDB etc also uses javascript. It's open and cross-platform. JavaScript is a single-threaded, prototype-based, dynamic language that supports object-oriented, imperative, and declarative (e.g. functional programming) programming styles.</p>
+                
+                <div id="intro">
+                  <h3>JS introduction</h3>
+                  <h3>Basics of JavaScript</h3>
+                  <p>22/08/2022</p>
+                    <br>
+                    <pre>
+                      <code>
+                        &lt;html&gt;
+                          &lt;head&gt;
+                            &lt;title&gt;Html&lt;/title&gt;
+                          &lt;/head&gt;
+                          &lt;body&gt;
+                            &lt;p&gt;Hey, this is javascript lessson 1&lt;/p&gt;
+                            &lt;script&gt;
+
+                              var a; //declaring
+                                a = "Hey"; // initalising
+                                var a = 10;
+                                console.log(a);
+                                a = "Hello world";
+                                var a = true;
+                                var a = null;
+                                console.log(a);
+                    
+                                var a = [1, 2, 3, 4, 5]; // array
+                                var a = {
+                                  //object
+                                  name: "Shashi",
+                                  school: "Newton",
+                                };
+                    
+                                var a = {
+                                  name: "newton",
+                                  town: "XYZ",
+                                  age: 100,
+                                };
+
+                                //ACCESS VARIABLES
+                                console.log(a);
+                                console.log(a.name);
+                                console.log(a["name"]);
+                                //MODIFY VARIABLES
+                                a.name = "Random name";
+                                a["age"] = 200;
+                                console.log(a);
+                    
+                              USING THE OBJECT
+                                var car = new Object();
+                                console.log("1.", car);
+                                car.color = "Red";
+                                car.type = "Hatchback";
+                                car.price = 100;
+                                console.log("2", car);
+                    
+                              ARRAYS
+                                var ages = [10, 20, 30, 40, 50, 100];
+                                  index      0   1   2   3   4
+
+                              ACCESS
+                                console.log(ages[2]);
+                                console.log(ages[4]);
+
+                              MODIFY
+                                ages[2] = 5000;
+                                console.log(ages);
+                                var ages = new Array(10, 20, 30, 40, 50);
+                                ages[5] = 60;
+                                console.log(ages);
+                                console.log(ages.length);
+                    
+                              FUNCTION
+                              CREATING A FUNCTION
+                                function add(x, y) {
+                              console.log(x + y);
+                                }
+                                add(2, 4); //CALLING A FUNCTION
+                    
+                                function multiply(x, y) { //function declaration
+                                  return x * y;
+                                }
+                                var value1 = multiply(20, 40);
+                                console.log(value1);
+                                var add = function (a, b) { //function expression
+                                  return a + b;
+                                };
+                                var value = add(10, 20);
+                                console.log(value);
+
+                            &lt;/script&gt; <!-- &lt; == "< LESS THAN SYMBOL" &gt; == GREATER THAN symbol-->
+                          &lt;/body&gt;
+                        &lt;/html&gt;
+
+                      </code>
+                    </pre>
+                </div>
+            </section>
+        </div>
+    </main>
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+        });
+    }
+</script>
+</body>
+</html>
